@@ -1,11 +1,11 @@
-// fetch('https://webheroschool.github.io/lar1')
+  // fetch('https://webheroschool.github.io/lar1')
 fetch('https://api.github.com/users/')
   .then(res => res.json())
   .then(json => {
- document.querySelector('.avatar_url').innerHTML += `<img src=${json.avatar_url}alt="">`;
- document.querySelector('.login').innerHTML += json.login;
- document.querySelector('.bio').innerHTML += json.bio;
- document.querySelector('.url').innerHTML += json.url;
+     document.querySelector('.avatar_url').innerHTML += `<img src=${json.avatar_url}alt="">`;
+     document.querySelector('.login').innerHTML += json.login;
+     document.querySelector('.bio').innerHTML += json.bio;
+     document.querySelector('.url').innerHTML += json.url;
  
     let bio = document.createElement('div');
     bio.className = 'bio';
